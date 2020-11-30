@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "displayName": "LaMetric Time",
+  "name": "homebridge-lametric-time",
+  "version": "1.0.0",
+  "description": "Control LaMetric Time",
+  "main": "dist/accessory.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build",
+    "postpublish": "npm run clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "in-Reach UG & Co. KG",
+  "engines": {
+    "homebridge": ">=0.4.50",
+    "node": ">=10.21.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "license": "ISC",
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inReachCo/homebridge-lametric-time.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inReachCo/homebridge-lametric-time/issues"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.19",
+    "typescript": "^3.8.3",
+    "rimraf": "^3.0.2",
+    "homebridge": "^1.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "local-devices": "^3.1.0",
+    "polling-to-event": "^2.1.0",
+    "requests": "^0.3.0"
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "pluginAlias": "LaMetricTime",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "required": true,
+          "default": "LaMetricTime"
+        },
+        "host": {
+            "title": "IPAddress",
+            "type": "string",
+            "required": true,
+            "default": "192.168.2.100"
+        },
+        "apikey": {
+            "title": "ApiKey",
+            "type": "string",
+            "required": true,
+            "default": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        },
+        "notify_text": {
+          "title": "Notification Text",
+          "type": "string",
+          "required": true,
+          "default": "hello from homekit"
+        },
+        "notify_icon": {
+          "title": "Notification Alert",
+          "type": "string",
+          "required": true,
+          "default": "4087"
+        },
+        "notify_sound": {
+          "title": "Notification Sound",
+          "type": "string",
+          "required": true,
+          "default": "cat"
+        },
+        "notify_cycles": {
+          "title": "Notification Cycles",
+          "type": "number",
+          "required": true,
+          "default": 1
+        }
+      }
+    }
+}
