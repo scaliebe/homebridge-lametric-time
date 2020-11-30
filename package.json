@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "LaMetric Time",
   "name": "homebridge-lametric-time",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Control LaMetric Time",
   "main": "dist/accessory.js",
   "scripts": {

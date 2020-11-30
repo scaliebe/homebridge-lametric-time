@@ -38,8 +38,7 @@
         "notify_sound": {
           "title": "Notification Sound",
           "type": "string",
-          "required": true,
-          "default": "cat"
+          "required": false
         },
         "notify_cycles": {
           "title": "Notification Cycles",
