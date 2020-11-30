@@ -9,12 +9,12 @@ export class lametric_api_client {
         this.api_auth = 'Basic ' + Buffer.from('dev:' + apikey).toString('base64');
     }
 
-    public sendNotification(text : String, icon : String, sound: String){
+    public sendNotification(text : String, icon : String, sound: String, cycles: Number){
 
         const data = JSON.stringify({
             priority: 'warning',
             model: {
-                cycles: 3,
+                cycles: cycles,
                 frames: [ 
                     {
                         icon: icon,
