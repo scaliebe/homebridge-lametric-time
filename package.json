@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "displayName": "LaMetric Time",
   "name": "homebridge-lametric-time",
   "version": "1.0.0",
