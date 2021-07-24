@@ -28,6 +28,7 @@ class LaMetricTime implements AccessoryPlugin{
   private readonly lametricApi: lametric_api_client;
 
   private readonly notification_text: string;
+  private readonly notification_category: string;
   private readonly notification_icon: string;
   private readonly notification_sound: string;
   private readonly notification_cycles: number;
@@ -40,6 +41,7 @@ class LaMetricTime implements AccessoryPlugin{
     this.apikey = config.apikey;
 
     this.notification_text = config.notify_text;
+    this.notification_category = config.notify_category;
     this.notification_icon = config.notify_icon;
     this.notification_sound = config.notify_sound;
     this.notification_cycles = config.notify_cycles;
@@ -70,6 +72,7 @@ class LaMetricTime implements AccessoryPlugin{
 
     this.lametricApi.sendNotification(
       this.notification_text, 
+      this.notification_category,
       this.notification_icon, 
       this.notification_sound,
       this.notification_cycles,
