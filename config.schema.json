@@ -45,6 +45,12 @@
           "type": "number",
           "required": true,
           "default": 1
+        },
+        "notify_repeat": {
+          "title": "Notification Repeat",
+          "type": "number",
+          "required": true,
+          "default": 0
         }
       }
     }
