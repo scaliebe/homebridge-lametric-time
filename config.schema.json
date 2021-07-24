@@ -29,6 +29,12 @@
           "required": true,
           "default": "hello from homekit"
         },
+        "notify_category": {
+          "title": "Nofity Category",
+          "type": "string",
+          "required": true,
+          "default": "notifications"
+        },
         "notify_icon": {
           "title": "Notification Alert",
           "type": "string",
