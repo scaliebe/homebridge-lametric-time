@@ -14,6 +14,7 @@ Example config.json:
             "notify_icon": "3061",
             "notify_sound": "dog",
             "notify_cycles": 3,
+            "notify_repeat": 0,
             "accessory": "LaMetricTime"
         }
     ]
