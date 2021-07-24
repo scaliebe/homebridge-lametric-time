@@ -70,7 +70,8 @@ class LaMetricTime implements AccessoryPlugin{
       this.notification_text, 
       this.notification_icon, 
       this.notification_sound,
-      this.notification_cycles);
+      this.notification_cycles,
+      this.notification_repeat);
 
     var that = this;
     setTimeout(() => that.switchService.updateCharacteristic('On', false), 100);
