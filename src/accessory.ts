@@ -31,6 +31,7 @@ class LaMetricTime implements AccessoryPlugin{
   private readonly notification_icon: string;
   private readonly notification_sound: string;
   private readonly notification_cycles: number;
+  private readonly notification_repeat: number;
 
   constructor(log: Logging, config: AccessoryConfig, api: API) {
     this.log = log;
@@ -42,6 +43,7 @@ class LaMetricTime implements AccessoryPlugin{
     this.notification_icon = config.notify_icon;
     this.notification_sound = config.notify_sound;
     this.notification_cycles = config.notify_cycles;
+    this.notification_repeat = config.notify_repeat;
 
     this.lametricApi = new lametric_api_client(this.host, this.apikey);
 
