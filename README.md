@@ -19,5 +19,5 @@ Example config.json:
         }
     ]
 ```
-Icon ID'S visible here: https://developer.lametric.com/icons
+Icon ID's visible here: https://developer.lametric.com/icons
 More about possible values can for sound / cycles / repeat and so on can be found here: https://lametric-documentation.readthedocs.io/en/latest/reference-docs/device-notifications.html
