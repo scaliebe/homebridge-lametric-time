@@ -11,10 +11,14 @@ Example config.json:
             "host": "192.168.2.100",
             "apikey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
             "notify_text": "hello from homekit",
+            "notify_category": "notifications",
             "notify_icon": "3061",
             "notify_sound": "dog",
             "notify_cycles": 3,
+            "notify_repeat": 0,
             "accessory": "LaMetricTime"
         }
     ]
 ```
+Icon ID's visible here: https://developer.lametric.com/icons
+More about possible values can for sound / cycles / repeat and so on can be found here: https://lametric-documentation.readthedocs.io/en/latest/reference-docs/device-notifications.html

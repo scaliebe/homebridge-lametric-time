@@ -28,9 +28,11 @@ class LaMetricTime implements AccessoryPlugin{
   private readonly lametricApi: lametric_api_client;
 
   private readonly notification_text: string;
+  private readonly notification_category: string;
   private readonly notification_icon: string;
   private readonly notification_sound: string;
   private readonly notification_cycles: number;
+  private readonly notification_repeat: number;
 
   constructor(log: Logging, config: AccessoryConfig, api: API) {
     this.log = log;
@@ -39,9 +41,11 @@ class LaMetricTime implements AccessoryPlugin{
     this.apikey = config.apikey;
 
     this.notification_text = config.notify_text;
+    this.notification_category = config.notify_category;
     this.notification_icon = config.notify_icon;
     this.notification_sound = config.notify_sound;
     this.notification_cycles = config.notify_cycles;
+    this.notification_repeat = config.notify_repeat;
 
     this.lametricApi = new lametric_api_client(this.host, this.apikey);
 
@@ -68,9 +72,11 @@ class LaMetricTime implements AccessoryPlugin{
 
     this.lametricApi.sendNotification(
       this.notification_text, 
+      this.notification_category,
       this.notification_icon, 
       this.notification_sound,
-      this.notification_cycles);
+      this.notification_cycles,
+      this.notification_repeat);
 
     var that = this;
     setTimeout(() => that.switchService.updateCharacteristic('On', false), 100);
